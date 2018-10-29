@@ -7,8 +7,8 @@
  */
 
 
-function operation($num1, $num2, $operator){
-    switch ($operator)
+function sum($num1, $num2){
+    /*switch ($operator)
     {
         case '+':
             return $num1 + $num2;
@@ -16,13 +16,6 @@ function operation($num1, $num2, $operator){
 
         default:
             return 'operator not found';
-    }
+    }*/
+    return $num1 + $num2;
 }
-
-$result = 0;
-
-if (isset($_POST['submit'])){
-    $result = operation($_POST['num1'], $_POST['num2'], $_POST['oper']);
-}
-
-require '../templates/sum.tmpl.php';
